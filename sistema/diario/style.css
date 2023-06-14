@@ -1,0 +1,197 @@
+body {
+    overflow-x: hidden;
+}
+
+
+/* Sidebar close */
+
+.sidebar {
+    position: fixed;
+    background-color: rgb(76, 153, 241);
+    height: 100%;
+    width: 63px;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.sidebar .menu-icon {
+    display: block;
+    position: absolute;
+    left: 22px;
+    top: 7px;
+    font-size: 30px;
+    transition: all 0.3s ease;
+}
+
+.sidebar a {
+    display: block;
+    position: absolute;
+    left: 22px;
+    width: 32px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.4s ease;
+}
+
+.sidebar i:hover {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.sidebar i:hover {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.sidebar a .home:hover {
+    background-color: transparent;
+    border-radius: none;
+}
+
+.sidebar a .home img {
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
+}
+
+.sidebar a i {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar a i p {
+    display: inline-flex;
+    height: 0px;
+    margin-left: 20px;
+    font-size: 0px;
+    font-family: 'Comfortaa', cursive;
+    opacity: 0;
+    cursor: default;
+    transition: all 0.3s ease;
+}
+
+.sidebar .home i p {
+    display: inline-flex;
+    height: 0px;
+    margin-left: 10px;
+    font-size: 0px;
+    font-family: 'Comfortaa', cursive;
+    color: rgb(233, 225, 255);
+    opacity: 0;
+    cursor: default;
+    transition: all 0.3s ease;
+}
+
+.sidebar .home {
+    top: 40px;
+}
+
+.sidebar .diario {
+    top: 80px;
+}
+
+.sidebar .historial {
+    top: 130px;
+}
+
+.sidebar .evolucion {
+    top: 180px;
+}
+
+.sidebar .notificaciones {
+    top: 230px;
+}
+
+.sidebar .estadistica {
+    top: 280px;
+}
+
+.sidebar .salir {
+    bottom: 10px;
+}
+
+.sidebar span {
+    position: absolute;
+    bottom: 0px;
+    width: 51px;
+    height: 53px;
+    background-color: rgb(69, 137, 216);
+    transition: all 0.3s ease;
+}
+
+
+/* Sidebar open */
+
+.sidebar.open {
+    position: fixed;
+    height: 100%;
+    width: 270px;
+}
+
+.sidebar.open a {
+    left: 40px;
+    width: 215px;
+}
+
+.sidebar.open .menu-icon {
+    left: 220px;
+}
+
+.sidebar.open a i p {
+    font-size: 20px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.sidebar.open .home i p {
+    height: 8px;
+    font-size: 20px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.sidebar.open span {
+    width: 259px;
+}
+
+.sidebar.open .home {
+    top: 7px;
+    width: 50px;
+}
+
+.sidebar.open a .home img {
+    width: 40px;
+    height: 40px
+}
+
+
+/* Home content */
+
+.home-content {
+    display: inline-block;
+    position: absolute;
+    left: 50px;
+    width: 97.35%;
+    padding: 50px;
+}
+
+#diarioDate {
+    font-size: small;
+    color: gray;
+}
+
+.modal-footer {
+    display: flex !important;
+    justify-content: left;
+}
+
+.answer {
+    width: 48em;
+}
+
+@media (max-width: 991px) {
+    .answer {
+        width: 16.7em;
+    }
+}

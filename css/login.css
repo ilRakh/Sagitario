@@ -1,0 +1,750 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Bebas+Neue&display=swap');
+body {
+    background: linear-gradient(90deg, rgba(8, 0, 156, 1) 0%, rgba(124, 90, 245, 1) 35%, rgba(75, 160, 218, 1) 100%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 95%;
+    height: 90vh;
+    box-shadow: rgba(0, 0, 0, 0.45) -20px 25px 20px -10px;
+}
+
+.login-behind {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 95%;
+    height: 90vh;
+    box-shadow: rgba(0, 0, 0, 0.45) -20px 25px 20px -10px;
+    animation: login-anim 5s;
+}
+
+.login-forward {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 95%;
+    height: 90vh;
+    box-shadow: rgba(0, 0, 0, 0.45) -20px 25px 20px -10px;
+    animation: login-anim 5s;
+}
+
+.signup {
+    display: flex;
+    background-color: rgba(8, 0, 156, 1);
+    width: 95%;
+    height: 85vh;
+    box-shadow: rgba(0, 0, 0, 0.45) -25px 25px 20px -10px;
+}
+
+.signup-forward {
+    display: flex;
+    background-color: rgba(8, 0, 156, 1);
+    width: 95%;
+    height: 85vh;
+    box-shadow: rgba(0, 0, 0, 0.45) -25px 25px 20px -10px;
+    animation: reg-anim 5s;
+}
+
+.signup-behind {
+    display: flex;
+    background-color: rgba(8, 0, 156, 1);
+    width: 95%;
+    height: 85vh;
+    box-shadow: rgba(0, 0, 0, 0.45) -25px 25px 20px -10px;
+    animation: reg-anim 5s;
+}
+
+.label-login {
+    display: block;
+    font-size: large;
+}
+
+.form-login {
+    width: 65%;
+    height: 50%;
+}
+
+.input-login {
+    width: 100%;
+    outline: none;
+    padding: 15px 0px 15px 5px;
+    margin: 5px 0px 10px 0px;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(90deg, rgba(8, 0, 156, 1) 0%, rgba(124, 90, 245, 1) 35%, rgba(75, 160, 218, 1) 100%);
+    font-size: large;
+}
+
+.header-login {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-size: 50px;
+    color: rgba(8, 0, 156, 1);
+    font-family: 'Baloo 2', cursive;
+}
+
+.footer-login {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+.btn-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+}
+
+.my-btn {
+    border: 0px;
+    background: rgba(124, 90, 245, 1);
+    border-bottom: 5px solid rgb(50, 35, 104, 1);
+    border-radius: 12px;
+    box-shadow: 6px 6px 6px #999;
+    cursor: pointer;
+    display: block;
+    font-size: 28px;
+    color: #fff;
+    margin: 80px auto;
+    padding: 5px 10px;
+    text-align: center;
+    transition: all 0.2s ease 0s;
+    width: 120px;
+}
+
+.my-btn:hover {
+    background: rgb(110, 80, 219);
+}
+
+.my-btn:active {
+    box-shadow: 2px 2px 2px #777, 0px 0px 35px 0px rgba(8, 0, 156, 1);
+    border-bottom: 1px solid rgb(50, 35, 104, 1);
+    text-shadow: 0px 0px 5px #fff, 0px 0px 5px #fff;
+    transform: translateY(4px);
+    transition: all 0.1s ease 0s;
+    margin: 80px auto 76px auto;
+}
+
+.label-signup {
+    display: block;
+    font-size: medium;
+}
+
+.form-signup {
+    width: 70%;
+    height: 70%;
+}
+
+.input-signup {
+    width: 100%;
+    outline: none;
+    padding: 3px 0px 3px 5px;
+    margin: 5px 0px 10px 0px;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(90deg, rgba(8, 0, 156, 1) 0%, rgba(124, 90, 245, 1) 35%, rgba(75, 160, 218, 1) 100%);
+    font-size: large;
+}
+
+.input-signup-error {
+    width: 100%;
+    outline: none;
+    padding: 3px 0px 3px 5px;
+    margin: 5px 0px 10px 0px;
+    border: 2px solid red;
+    font-size: large;
+}
+
+.input-signup-success {
+    width: 100%;
+    outline: none;
+    padding: 3px 0px 3px 5px;
+    margin: 5px 0px 10px 0px;
+    border: 2px solid rgb(7, 255, 89);
+    font-size: large;
+}
+
+.header-signup {
+    width: 100%;
+    height: 5%;
+    text-align: center;
+    font-size: 20px;
+    color: rgba(8, 0, 156, 1);
+    font-family: 'Baloo 2', cursive;
+}
+
+.footer-signup {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    font-size: small;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.signup-sec {
+    display: inline-block;
+    width: 100%;
+}
+
+.btn-sec-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+
+.my-btn-signup {
+    border: 0px;
+    background: rgba(124, 90, 245, 1);
+    border-bottom: 5px solid rgb(50, 35, 104, 1);
+    border-radius: 12px;
+    box-shadow: 6px 6px 6px #999;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    margin: 80px auto;
+    padding: 1px 5px;
+    text-align: center;
+    transition: all 0.2s ease 0s;
+    width: 70px;
+}
+
+.my-btn-signup:hover {
+    background: rgb(110, 80, 219);
+}
+
+.my-btn-signup:active {
+    box-shadow: 2px 2px 2px #777, 0px 0px 35px 0px rgba(8, 0, 156, 1);
+    border-bottom: 1px solid rgb(50, 35, 104, 1);
+    text-shadow: 0px 0px 5px #fff, 0px 0px 5px #fff;
+    transform: translateY(4px);
+    transition: all 0.1s ease 0s;
+    margin: 80px auto 76px auto;
+}
+
+@media (min-width: 500px) {
+    .toggle {
+        width: 40px;
+        height: 21px;
+        display: inline-block;
+        position: relative;
+        top: 0;
+    }
+    span a {
+        float: right;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 0px) {
+    @media (min-height: 600px) {
+        .switch-container {
+            top: 60%;
+        }
+    }
+    @media (min-height: 700px) {
+        .label-signup {
+            display: block;
+            font-size: large;
+        }
+        .form-signup {
+            height: 50%;
+        }
+        .input-signup {
+            padding: 3px 0px 3px 5px;
+        }
+        .header-signup {
+            height: 5%;
+            font-size: 35px;
+        }
+        .footer-signup {
+            font-size: small;
+        }
+        .btn-sec-signup {
+            height: 10vh;
+        }
+        .my-btn-signup {
+            font-size: 18px;
+            padding: 1px 5px;
+            width: 70px;
+        }
+    }
+    @media (min-height: 800px) {
+        .switch-container {
+            top: 53%;
+        }
+    }
+    @media (min-height: 870px) {
+        .switch-container {
+            top: 48%;
+        }
+        .label-signup {
+            display: block;
+            font-size: large;
+        }
+        .form-signup {
+            height: 50%;
+        }
+        .input-signup {
+            padding: 7px 0px 7px 5px;
+        }
+        .header-signup {
+            height: 10%;
+            font-size: 40px;
+        }
+        .footer-signup {
+            font-size: medium;
+        }
+        .btn-sec-signup {
+            height: 15vh;
+        }
+        .my-btn-signup {
+            font-size: 18px;
+            padding: 1px 5px;
+            width: 70px;
+        }
+    }
+    @media (min-height: 1150px) {
+        .switch-container {
+            top: 43%;
+        }
+        .label-signup {
+            display: block;
+            font-size: large;
+        }
+        .form-signup {
+            height: 50%;
+        }
+        .input-signup {
+            padding: 10px 0px 10px 5px;
+        }
+        .header-signup {
+            height: 10%;
+            font-size: 40px;
+        }
+        .footer-signup {
+            font-size: medium;
+        }
+        .btn-sec-signup {
+            height: 15vh;
+        }
+        .my-btn-signup {
+            font-size: 18px;
+            padding: 5px 10px;
+            width: 120px;
+        }
+    }
+    @media (min-height: 1300px) {
+        .switch-container {
+            top: 41%;
+        }
+    }
+    @media (min-height: 1500px) {
+        .switch-container {
+            top: 38%;
+        }
+    }
+}
+
+@media (min-width: 850px) {
+    .login {
+        width: 75%;
+        height: 75vh;
+    }
+    .login-behind {
+        width: 75%;
+        height: 75vh;
+    }
+    .login-forward {
+        width: 75%;
+        height: 75vh;
+    }
+    .signup {
+        width: 75%;
+        height: 70vh;
+    }
+    .signup-forward {
+        width: 75%;
+        height: 70vh;
+    }
+    .signup-behind {
+        width: 75%;
+        height: 70vh;
+    }
+    .header-login {
+        font-size: 70px;
+    }
+    span a {
+        float: right;
+        text-decoration: none;
+    }
+    .btn-sec {
+        height: 15vh;
+    }
+    @media (min-height: 600px) {
+        .switch-container {
+            top: 70%;
+        }
+        .signup-sec {
+            width: 49.3%;
+        }
+    }
+    @media (min-height: 730px) {
+        .switch-container {
+            top: 58%;
+        }
+    }
+    @media (min-height: 850px) {
+        .switch-container {
+            top: 53%;
+        }
+    }
+    @media (min-height: 900px) {
+        .switch-container {
+            top: 48%;
+        }
+    }
+    @media (min-height: 1250px) {
+        .switch-container {
+            top: 43%;
+        }
+    }
+    @media (min-height: 1500px) {
+        .switch-container {
+            top: 41%;
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .login {
+        width: 35%;
+        height: 70vh;
+    }
+    .login-behind {
+        width: 35%;
+        height: 70vh;
+    }
+    .login-forward {
+        width: 35%;
+        height: 70vh;
+    }
+    .signup {
+        position: absolute;
+        left: 300px;
+        width: 35%;
+        height: 65vh;
+    }
+    .signup-forward {
+        position: absolute;
+        left: 300px;
+        width: 35%;
+        height: 65vh;
+    }
+    .signup-behind {
+        position: absolute;
+        left: 300px;
+        width: 35%;
+        height: 65vh;
+    }
+    span a {
+        float: right;
+        text-decoration: none;
+    }
+    .signup-sec {
+        width: 48.5%;
+    }
+    @media (min-height: 600px) {
+        .switch-container {
+            top: 60%;
+        }
+        .input-login {
+            padding: 10px 0px 10px 5px;
+        }
+    }
+    @media (min-height: 730px) {
+        .switch-container {
+            top: 60%;
+        }
+    }
+    @media (min-height: 850px) {
+        .switch-container {
+            top: 55%;
+        }
+    }
+    @media (min-height: 900px) {
+        .switch-container {
+            top: 53%;
+        }
+    }
+    @media (min-height: 1250px) {
+        .switch-container {
+            top: 45%;
+        }
+    }
+    @media (min-height: 1500px) {
+        .switch-container {
+            top: 43%;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .login {
+        width: 35%;
+        height: 70vh;
+    }
+    .login-behind {
+        width: 35%;
+        height: 70vh;
+    }
+    .login-forward {
+        width: 35%;
+        height: 70vh;
+    }
+    .signup {
+        position: absolute;
+        left: 450px;
+        width: 35%;
+        height: 65vh;
+    }
+    .signup-forward {
+        position: absolute;
+        left: 450px;
+        width: 35%;
+        height: 65vh;
+    }
+    .signup-behind {
+        position: absolute;
+        left: 450px;
+        width: 35%;
+        height: 65vh;
+    }
+    span a {
+        float: right;
+        text-decoration: none;
+    }
+    .signup-sec {
+        width: 49.3%;
+    }
+}
+
+@media (min-width: 1720px) {
+    .signup-sec {
+        width: 49.5%;
+    }
+    .header-signup {
+        height: 10%;
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 1950px) {
+    .login {
+        width: 35%;
+        height: 70vh;
+    }
+    .login-behind {
+        width: 35%;
+        height: 70vh;
+    }
+    .login-forward {
+        width: 35%;
+        height: 70vh;
+    }
+    .signup {
+        position: absolute;
+        left: 550px;
+        width: 35%;
+        height: 65vh;
+    }
+    .signup-forward {
+        position: absolute;
+        left: 550px;
+        width: 35%;
+        height: 65vh;
+    }
+    .signup-behind {
+        position: absolute;
+        left: 550px;
+        width: 35%;
+        height: 65vh;
+    }
+    span a {
+        float: right;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 2250px) {
+    .login {
+        width: 35%;
+        height: 70vh;
+    }
+    .login-behind {
+        width: 35%;
+        height: 70vh;
+    }
+    .login-forward {
+        width: 35%;
+        height: 70vh;
+    }
+    .signup {
+        position: absolute;
+        left: 600px;
+        width: 35%;
+        height: 65vh;
+    }
+    .signup-forward {
+        position: absolute;
+        left: 600px;
+        width: 35%;
+        height: 65vh;
+    }
+    .signup-behind {
+        position: absolute;
+        left: 600px;
+        width: 35%;
+        height: 65vh;
+    }
+    span a {
+        float: right;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 2700px) {
+    .login {
+        width: 35%;
+        height: 70vh;
+    }
+    .login-behind {
+        width: 35%;
+        height: 70vh;
+    }
+    .login-forward {
+        width: 35%;
+        height: 70vh;
+    }
+    .signup {
+        position: absolute;
+        left: 750px;
+        width: 35%;
+        height: 65vh;
+    }
+    .signup-forward {
+        position: absolute;
+        left: 750px;
+        width: 35%;
+        height: 65vh;
+    }
+    .signup-behind {
+        position: absolute;
+        left: 750px;
+        width: 35%;
+        height: 65vh;
+    }
+    span a {
+        float: right;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 3150px) {
+    .login {
+        width: 35%;
+        height: 70vh;
+    }
+    .login-behind {
+        width: 35%;
+        height: 70vh;
+    }
+    .login-forward {
+        width: 35%;
+        height: 70vh;
+    }
+    .signup {
+        position: absolute;
+        left: 850px;
+        width: 35%;
+        height: 65vh;
+    }
+    .signup-forward {
+        position: absolute;
+        left: 850px;
+        width: 35%;
+        height: 65vh;
+    }
+    .signup-behind {
+        position: absolute;
+        left: 850px;
+        width: 35%;
+        height: 65vh;
+    }
+}
+
+@media (min-width: 3500px) {
+    .login {
+        width: 35%;
+        height: 70vh;
+    }
+    .login-behind {
+        width: 35%;
+        height: 70vh;
+    }
+    .login-forward {
+        width: 35%;
+        height: 70vh;
+    }
+    .signup {
+        position: absolute;
+        left: 1000px;
+        width: 35%;
+        height: 65vh;
+    }
+    .signup-forward {
+        position: absolute;
+        left: 1000px;
+        width: 35%;
+        height: 65vh;
+    }
+    .signup-behind {
+        position: absolute;
+        left: 1000px;
+        width: 35%;
+        height: 65vh;
+    }
+    span a {
+        float: right;
+        text-decoration: none;
+    }
+}
